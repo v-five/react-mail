@@ -30,5 +30,15 @@ module.exports = {
 				else res.json(recipient);
 			});
 		}
-    }
+	},
+	deleteRecipient: (req, res) => {
+		let id = req.params.id;
+		if(!id.match(/^[0-9a-fA-F]{24}$/)) res.status(404).send("There are no recipient found with this id: " + id);
+		else {
+			Recipient.findByIdAndDelete(id, (err, recipient) => {
+					if (err) res.status(400).send(err.message);
+					else res.status(200).send();
+			});
+		}
+	}
 };

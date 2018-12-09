@@ -9,5 +9,8 @@ module.exports = (router) => {
 		.post(recipientController.addRecipient);
 		
     router.route('/recipient/:id')
-        .get(recipientController.getRecipient);
+		.get(recipientController.getRecipient);
+	
+	router.route('/recipient/:id')
+        .delete(recipientController.deleteRecipient);
 };
