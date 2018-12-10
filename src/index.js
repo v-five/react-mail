@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/bootstrap.css';
+import 'semantic-ui-css/semantic.min.css'
 import './assets/fontawsome.css';
 import './assets/style.css';
 

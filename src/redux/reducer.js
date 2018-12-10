@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
 import recipients from './reducers/recipients';
-import common from './reducers/common';
+import emailTemplates from './reducers/emailTemplates';
+import campaigns from './reducers/campaigns';
 import { routerReducer } from 'react-router-redux';
 
 export default combineReducers({
   recipients,
-  common,
+  emailTemplates,
+  campaigns,
   router: routerReducer
 });

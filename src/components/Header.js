@@ -11,8 +11,12 @@ class Header extends Component {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                    <a className="nav-item nav-link" href="/">View recipients</a>
-                    <a className="nav-item nav-link" href="/create-recipient">Create recipient</a>
+                        <a className="nav-item nav-link" href="/">View recipients</a>
+                        <a className="nav-item nav-link" href="/create-recipient">Create recipient</a>
+                        <a className="nav-item nav-link" href="/email-templates">View email templates</a>
+                        <a className="nav-item nav-link" href="/create-email-template">Create email template</a>
+                        <a className="nav-item nav-link" href="/campaigns">View Campaigns</a>
+                        <a className="nav-item nav-link" href="/create-campaign">Create Campaign</a>
                     </div>
                 </div>
             </nav>

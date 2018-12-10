@@ -11,6 +11,6 @@ module.exports = (router) => {
     router.route('/recipient/:id')
 		.get(recipientController.getRecipient);
 	
-	router.route('/recipient/:id')
+	  router.route('/recipient/:id')
         .delete(recipientController.deleteRecipient);
 };

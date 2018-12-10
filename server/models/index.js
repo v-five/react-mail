@@ -1,4 +1,6 @@
 
 module.exports = {
-	Recipient: require('./recipient'),
+	Recipient: 		require('./recipient'),
+	EmailTemplate: 	require('./emailTemplate'),
+	Campaign: 	require('./campaign')
 };
